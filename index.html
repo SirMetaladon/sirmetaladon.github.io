@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Made by Isaiah Groves 5/8/20 for CIS130-H101: Final Project /index.html -->
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Isaiah Groves' Profile</title>
+</head>
+
+<body>
+  <div class="header"> <!--Head Component-->
+    <p class="microheader">Welcome to the profile of...</p>
+    <h4 class="mainheader">Isaiah Groves</h4>
+  </div>
+  <div class="container"><!--Container (for bootstrap and spacing)-->
+    <div class="textbox">
+      <p>My name is Isaiah Groves. I'm 19 and live in Springfield, MO. I'm enrolled at Ozarks Technical College for a Certificate in Computer Science. This page tells you who I am, what I can offer, and why you might want to hire me!</p>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel"> <!--Carousel-->
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="wheelhouse.png" class="d-block w-100" alt="A picture of the Wheelhouse food truck.">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>I'm employed at the Wheelhouse, a family-owned restauraunt</h5>
+            <p>It's been my workplace for over a year</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="tf2map.png" class="d-block w-100" alt="A scene of a Team Fortess 2 map.">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>I enjoy studying game design</h5>
+            <p>TF2 map design is a particular interest</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="models.png" class="d-block w-100" alt="A pile of 3d models I've made.">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>3D modeling is one of my artistic outlets</h5>
+            <p>I use a CAD program to design freight cars</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div class="thirdblock"> <!--2nd half component-->
+      <div class="text2">
+        <p>I'm seeking a job in Computer Programming. Computers are a defining aspect of my life.  They're my hobby, my tool for learning, my hangout, and my passion all rolled into one. Since my earliest introduction, I've been using computers to make things. It's no suprise I gravitated towards software development. <br> <br> I also have Asperger's Syndrome, a mild form of autism. I was educated at home and successfully completed my HiSet in 2019. I'm an amateur programmer, model railroader, avid gamer, and -  most of all - hungry to learn. My immense curiosity is all part of my desire to do a good job, and to be dependable as well as friendly. My Myers-Briggs personality type is ENTJ. That means I'm extroverted, idea-driven, motivated by logic, and prefer being organized.</p>
+      </div>
+      <div class="cardpile"> <!--Cards!-->
+
+        <div class="card">
+          <img src="metaladons_models_new_alt.jpg" class="card-img-top" alt="A 3D model of a freight car">
+          <div class="card-body">
+            <p class="card-text">I have experience with some 3d modeling software. I make freight car models as a hobby.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="code.jpg" class="card-img-top" alt="Some Expression 2 (a version of Lua) code.">
+          <div class="card-body">
+            <p class="card-text">Programming is one of my favorite things to do. I learned programming early using a game's scripting language.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="source.jpg" class="card-img-top" alt="A picture of the Source Engine logo.">
+          <div class="card-body">
+            <p class="card-text">I play lots of games that use the Source engine. I've invested almost 12 thousand hours just on Source games!</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="omra.jpg" class="card-img-top" alt="A shot of the Ozarks Model Railroading Association logo.">
+          <div class="card-body">
+            <p class="card-text">Another of my passions is railroading. I'm a strong contributor to several local railroad organizations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contactme"> <!--Contact Me block-->
+      <h4 class="contact">Need to contact me?</h4>
+      <div class="leftcontact">
+        <form class="form" action="#" method="get">
+            <label for="email">Email Address:</label>
+            <br>
+            <input class="emailbox" placeholder="example@email.com" type="text" id="email" required name="email">
+            <br>
+            <label for="message">Message:</label>
+            <br>
+            <textarea class="textarea" id="message" rows="4" cols="40"
+            name="message" required placeholder="Write me a message here!"></textarea>
+            <button type="button" class="btn btn-secondary">Send E-Mail (disabled)</button>
+        </form>
+      </div>
+      <div class="rightcontact">
+        <P class="headspace">Or contact me on one of these platforms:</P>
+        <a href="https://steamcommunity.com/profiles/76561198077247660/">https://steamcommunity.com/<br>profiles/76561198077247660/</a>
+        <br>
+        <br>
+        <a href="https://discordapp.com/">Sir Metaladon #1539<br> (https://discordapp.com/)</a>
+      </div>
+
+    </div>
+  </div>
+  <div class="thanks"> <!--Finishing block-->
+    <h4 class="end">Thanks for Visiting</h4>
+    <p class="subend">I look forward to hearing from you!</p>
+  </div>
+  <div class="footerblock"> <!--Footer-->
+    <p>&copy; Isaiah Groves 2020, made for CIS130-H101</p>
+  </div>
+  <!--Javascript-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+/*Made by Isaiah Groves 5/8/20 for CIS130-H101: Final Project styles.cess*/
+* { /*Overarching Styles*/
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  font-size: 1.3em;
+}
+
+h4 {
+  font-size: 2em;
+}
+
+body{
+  background-image: url(background.jpg);
+  background-size: 100% 100%
+}
+
+
+
+.header { /*Header*/
+  background-color: hsl(190,70%,60%);
+  margin: 30px 0px;
+  text-align: center;
+  position: relative;
+}
+
+.microheader {
+  position: relative;
+  right: 120px;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.mainheader {
+  font-size: 5em;
+  font-family: 'Merriweather', serif;
+}
+
+
+
+.container { /*Container*/
+  width: 95%;
+}
+
+.textbox {
+  background-color: hsl(0,0%,75%);
+  padding: 45px;
+  margin: 30px;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 6px hsl(0,0%,25%);
+}
+
+.carousel {
+  width: 75%;
+  margin: 30px auto;
+}
+
+.carousel-caption {
+  text-shadow: 1px 1px 3px hsl(0,0%,25%);
+}
+
+
+
+
+.thirdblock { /*2nd Container*/
+  background-color: hsl(190,70%,60%);
+  padding: 45px;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 6px hsl(0,0%,25%);
+}
+
+.text2 {
+  background-color: hsl(190,70%,45%);
+  border-radius: 1rem;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 6px hsl(0,0%,25%);
+}
+
+.cardpile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: hsl(0,0%,75%);
+  border: 8px solid hsl(0,0%,60%);
+  width: 45%;
+  margin: 10px;
+}
+
+.card-body {
+  height: 150px;
+}
+
+
+
+.contactme { /*Contact Block*/
+  background-color: hsl(0,0%,75%);
+  padding: 45px;
+  margin: 30px auto;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 6px hsl(0,0%,25%);
+  font-size: 1.2em;
+  text-align: center;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.leftcontact {
+  float:left;
+  width: 49%;
+  margin: 10px auto;
+}
+
+.emailbox {
+  width: 80%;
+}
+
+.textarea {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.rightcontact {
+  float:right;
+  width: 49%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.headspace {
+  padding-top: 20px;
+}
+
+
+
+.thanks{ /*Thanks Block*/
+  background-color: hsl(190,70%,60%);
+  padding: 45px;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 6px hsl(0,0%,25%);
+  font-size: 2em;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+.thanks h4 {
+  font-family: 'Merriweather', serif;
+}
+
+
+
+.footerblock { /*Footer Block*/
+  background-color: hsl(0,0%,50%);
+  padding: 30px;
+  margin: 30px 0px;
+  text-align: center;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+
+/*Responsives*/
+
+@media screen and (max-width:1000px){
+  .carousel {
+    width: 90%;
+  }
+  .card-body {
+    height: 220px;
+  }
+}
+
+@media screen and (max-width:768px){
+  .card{
+    width: 90%;
+  }
+  .card-body {
+    height: auto;
+  }
+  .microheader {
+    right: 60px;
+  }
+  .leftcontact, .rightcontact{
+    float:none;
+    width: 98%;
+  }
+}
+
+@media screen and (max-width:500px){
+  .microheader {
+    right: 40px;
+  }
+  .thirdblock {
+    padding: 20px;
+  }
+
+}
